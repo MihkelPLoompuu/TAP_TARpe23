@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url(/arendustsyklid/Pildid/images.PNG);
+    background-image: url('/arendustsyklid/Pildid/images.PNG');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

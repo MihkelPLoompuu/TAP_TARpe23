@@ -6,6 +6,20 @@
     <title>Inkrementaalne arendusmudel</title>
 </head>
 <body>
+    <nav>
+        <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Tarkvara arendusprotsess</a>
+                <ul class="dropdown-content">
+                    <li><a href="/arendustsyklid/Inkrementaalne.html">Inkrementaalne</a></li>
+                    <li><a href="/arendustsyklid/Spiraalmudel.html">Spiraalmudel</a></li>
+                    <li><a href="/arendustsyklid/waterfall.html" >Waterfall</a></li>
+                </ul>
+            </li>
+            <li><a href="#services">Veebirakenduste loomise alused</a></li>
+        </ul>
+    </nav>
     <p>
         <!-- pealkiri -->
         <h1>Inkrementaalne arendusmudel</h1>
@@ -42,7 +56,7 @@
           </ol>
           <!-- visuaalne joonis -->
          Joonis:<br>
-         <img src="/TAP_TARpe23/arendustsyklid/Pildid/Capture.PNG" height="250"><br/><br/>
+         <img src="/arendustsyklid/Pildid/Capture.PNG" height="250"><br/><br/>
 
         <!-- Tabel mis loetleb head ja vead () -->
         <table border="2">
@@ -73,5 +87,71 @@
             </tr>
         </table> <br/><br
     </p>
+    <style>
+        /* Navigation Menu */
+        nav {
+            background-color: #333;
+            padding: 5px 0;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .menu li {
+            display: inline-block;
+            position: relative;
+            margin: 0 15px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 8px 12px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .menu li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 180px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .dropdown-content li {
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content li a {
+            color: white;
+            padding: 5%;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content li a:hover {
+            background-color: #666;
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;;
+        }
+    </style>
 </body>
 </html>
