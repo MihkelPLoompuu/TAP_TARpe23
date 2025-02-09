@@ -1,36 +1,78 @@
 <!doctype html>
 <html lang="et">
 <head>
-    <title>Mihkel Ploompuu 2025</title>
+    <title>Mihkel Ploompuu 2024</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
+
+    <!-- Side Menu Button -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Side Navigation Menu -->
+    <nav id="sideMenu" class="side-menu">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+        <ul>
+            <li><a href="#home">Home</a></li>
             <li class="dropdown">
-                <a href="#" class="dropbtn">Tarkvara arendusprotsess</a>
+                <a href="#">Arendusprotsess ▼</a>
                 <ul class="dropdown-content">
-                    <li><a href="arendustsyklid/Inkrementaalne.html" >Inkrementaalne</a></li>
-                    <li><a href="arendustsyklid/Spiraalmudel.html" >Spiraalmudel</a></li>
-                    <li><a href="arendustsyklid/waterfall.html" >Waterfall</a></li>
-                    <li><a href="arendustsyklid/Prototüüpimine.html" >Prototüüpimine</a></li>
+                    <li><a href="/arendustsyklid/Inkrementaalne.html">Inkrementaalne</a></li>
+                    <li><a href="/arendustsyklid/Spiraalmudel.html">Spiraalmudel</a></li>
+                    <li><a href="/arendustsyklid/waterfall.html">Waterfall</a></li>
+                    <li><a href="/arendustsyklid/Prototüüpimine.html">Prototüüpimine</a></li>
                 </ul>
             </li>
-            <li><a href="#services">Veebirakenduste loomise alused</a></li>
+            <li><a href="#services">Veebirakendused</a></li>
         </ul>
     </nav>
 
-    <h3><strong>Mihkel Ploompuu 2024</strong></h3>
+    <h1>Mihkel Ploompuu 2024</h1>
     <ul>
         <li><b>Sünnikoht:</b> Tallinn</li>
         <li><b>Iseloomustus:</b> Tore ja osav</li>
         <li><b>E-post:</b> mihkelploompuu@gmail.com</li>
         <li><b>Veebilehekülg:</b> 
-            <a href="https://mihkelploompuu.github.io/TAP_TARpe23/" target="_blank">https://mihkelploompuu.github.io/TAP_TARpe23/</a>
+            <a href="https://mihkelploompuu.github.io/TAP_TARpe23/" target="_blank">mihkelploompuu.github.io</a>
         </li>
-        <li><b>Moto:</b> "Elame ainult ühekorra"</li>
+        <li><b>Moto:</b> "Elame ainult ühe korra"</li>
     </ul>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("sideMenu");
+            menu.classList.toggle("active");
+        }
+        function toggleMenu() {
+            var menu = document.getElementById("sideMenu");
+            var body = document.body;
+            
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+                body.classList.remove("body-move");
+            } else {
+                menu.classList.add("active");
+                body.classList.add("body-move");
+            }
+        }
+        function toggleMenu() {
+            var menu = document.getElementById("sideMenu");
+            var body = document.body;
+            var menuButton = document.querySelector(".menu-toggle");
+
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+                body.classList.remove("body-move");
+                menuButton.classList.remove("active"); // Change button color back to black
+            } else {
+                menu.classList.add("active");
+                body.classList.add("body-move");
+                menuButton.classList.add("active"); // Change button color to white
+            }
+        }
+    </script>
+
 </body>
 </html>
