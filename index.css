@@ -12,7 +12,8 @@ html, body {
 
 /* Center only h1 */
 h1 {
-    text-align: center;
+    text-align: center; /* Center the text */
+    text-decoration: underline; /* Adds an underline */
 }
 
 /* Side Menu Styles */
