@@ -79,7 +79,6 @@ C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProduct
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\SQLitePCLRaw.core.dll
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
-C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libe_sqlite3.so
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libe_sqlite3.so
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-armel\native\libe_sqlite3.so
@@ -87,7 +86,6 @@ C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProduct
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libe_sqlite3.so
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libe_sqlite3.so
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libe_sqlite3.so
-C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-s390x\native\libe_sqlite3.so
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libe_sqlite3.so
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-x86\native\libe_sqlite3.so
@@ -113,3 +111,10 @@ C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProduct
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\obj\Debug\net8.0-windows\CategorysAndProducts.pdb
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\obj\Debug\net8.0-windows\CategorysAndProducts.genruntimeconfig.cache
 C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\obj\Debug\net8.0-windows\ref\CategorysAndProducts.dll
+C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+C:\Users\mihke\source\repos\TAP_TARpe23\CategorysAndProducts\CategorysAndProducts\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
