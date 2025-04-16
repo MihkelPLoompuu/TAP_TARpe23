@@ -22,22 +22,63 @@ namespace BitcoinKalkulatorMihkelPloompuu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(currencyselector.SelectedItem.ToString() != "USD" || currencyselector.SelectedItem.ToString() !=
-                "GBP" || currencyselector.SelectedItem.ToString() != "EUR" || currencyselector.SelectedItem.ToString()
-                != "EEK" || currencyselector.SelectedItem.ToString() == null)
+            try
             {
-                MessageBox.Show("Error");
-                //MessageBox errorbox = new MessageBox("Palun vali valuuta.", "erroe", MessageBoxButtons.OK);
-                //errorbox.Show();
+                if (float.Parse(BitcoinAmountinput.Text) != null)
+                {
+                    return;
+                }
             }
-            else if (currencyselector.SelectedItem.ToString() == "USD")
+            catch(Exception ex)
             {
-                resultlable.Visible = true;
-                tulemuslabel.Visible = true;
-                BitcoinRates newbitcoinrate = GetRates();
-                float result = float.Parse(BitcoinAmountinput.Text)*(float)newbitcoinrate.Data.BTCUSD.VALUE;
-                resultlable.Text = $"{result} Bitcoin dollareiss";
+                MessageBox.Show($"Tekkis viga, bitcoinide arv on sisestamata.\nVea detailid:\nError{ex}");
             }
+            try
+            {
+                if (currencyselector.SelectedItem.ToString() != "USD" && currencyselector.SelectedItem.ToString() != "GBP" &&
+                currencyselector.SelectedItem.ToString() != "EUR" && currencyselector.SelectedItem.ToString() != "EEK")
+                {
+                    MessageBox.Show("Error","VALUUTA ON VALIMATA");
+                    //MessageBox errorbox = new MessageBox("Palun vali valuuta.", "erroe", MessageBoxButtons.OK);
+                    //errorbox.Show();
+                }
+                else if (currencyselector.SelectedItem.ToString() == "USD")
+                {
+                    resultlable.Visible = true;
+                    tulemuslabel.Visible = true;
+                    BitcoinRates newbitcoinrate = GetRates();
+                    float result = float.Parse(BitcoinAmountinput.Text) * (float)newbitcoinrate.Data.BTCUSD.VALUE;
+                    resultlable.Text = $"{result} Bitcoin dollareiss";
+                }
+                else if (currencyselector.SelectedItem.ToString() == "GBP")
+                {
+                    resultlable.Visible = true;
+                    tulemuslabel.Visible = true;
+                    BitcoinRates newbitcoinrate = GetRates();
+                    float result = float.Parse(BitcoinAmountinput.Text) * (float)newbitcoinrate.Data.BTCGBP.VALUE;
+                    resultlable.Text = $"{result} Bitcoin naelades";
+                }
+                else if (currencyselector.SelectedItem.ToString() == "EUR")
+                {
+                    resultlable.Visible = true;
+                    tulemuslabel.Visible = true;
+                    BitcoinRates newbitcoinrate = GetRates();
+                    float result = float.Parse(BitcoinAmountinput.Text) * (float)newbitcoinrate.Data.BTCEUR.VALUE;
+                    resultlable.Text = $"{result} Bitcoin eurodes";
+                }
+                else if (currencyselector.SelectedItem.ToString() == "EEK")
+                {
+                    resultlable.Visible = true;
+                    tulemuslabel.Visible = true;
+                    BitcoinRates newbitcoinrate = GetRates();
+                    float result = (float.Parse(BitcoinAmountinput.Text) * 15.6466f) * (float)newbitcoinrate.Data.BTCEUR.VALUE;
+                    resultlable.Text = $"{result} Bitcoin eurodes";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Tekkis viga, valuuta on valimata.\nVea detailid:\nError{ex}");
+            }           
         }
 
         public static BitcoinRates GetRates()
