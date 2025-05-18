@@ -17,8 +17,8 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li class="dropdown">
-                <a href="#">Arendusprotsess ▼</a>
-                <ul class="dropdown-content">
+                <a href="#" class="dropdown-toggle" data-dropdown="arendus">Arendusprotsess ▼</a>
+                <ul class="dropdown-content" id="dropdown-arendus">
                     <li><a href="arendustsyklid/Inkrementaalne.html">Inkrementaalne</a></li>
                     <li><a href="arendustsyklid/Spiraalmudel.html">Spiraalmudel</a></li>
                     <li><a href="arendustsyklid/waterfall.html">Waterfall</a></li>
@@ -29,8 +29,8 @@
                     <li><a href="arendustsyklid/Extreme_Programming.html">Extreme Programming</a></li>
                     <li><a href="arendustsyklid/V-Shape.html">V-Shape</a></li>
                 </ul><br>
-                <a href="#">Casevahendid ▼</a>
-                <ul class="dropdown-content">
+                <a href="#" class="dropdown-toggle" data-dropdown="casevahendid">Casevahendid ▼</a>
+                <ul class="dropdown-content" id="dropdown-casevahendid">
                     <li><a href="casevahendid/main.html">Case</a></li>
                     <li><a href="casevahendid/lowercase.html">Lowercase</a></li>
                     <li><a href="casevahendid/uppercase.html">Uppercase</a></li>
@@ -58,35 +58,30 @@
     <script>
         function toggleMenu() {
             var menu = document.getElementById("sideMenu");
-            menu.classList.toggle("active");
-        }
-        function toggleMenu() {
-            var menu = document.getElementById("sideMenu");
-            var body = document.body;
-            
-            if (menu.classList.contains("active")) {
-                menu.classList.remove("active");
-                body.classList.remove("body-move");
-            } else {
-                menu.classList.add("active");
-                body.classList.add("body-move");
-            }
-        }
-        function toggleMenu() {
-            var menu = document.getElementById("sideMenu");
             var body = document.body;
             var menuButton = document.querySelector(".menu-toggle");
 
-            if (menu.classList.contains("active")) {
-                menu.classList.remove("active");
-                body.classList.remove("body-move");
-                menuButton.classList.remove("active"); // Change button color back to black
-            } else {
-                menu.classList.add("active");
-                body.classList.add("body-move");
-                menuButton.classList.add("active"); // Change button color to white
-            }
+            menu.classList.toggle("active");
+            body.classList.toggle("body-move");
+            menuButton.classList.toggle("active");
         }
+
+        // Dropdown loogika – ainult üks korraga avatud
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = 'dropdown-' + this.getAttribute('data-dropdown');
+                const targetDropdown = document.getElementById(targetId);
+
+                document.querySelectorAll('.dropdown-content').forEach(menu => {
+                    if (menu !== targetDropdown) {
+                        menu.classList.remove('active');
+                    }
+                });
+
+                targetDropdown.classList.toggle('active');
+            });
+        });
     </script>
 
 </body>

@@ -12,8 +12,8 @@ html, body {
 
 /* Center only h1 */
 h1 {
-    text-align: center; /* Center the text */
-    text-decoration: underline; /* Adds an underline */
+    text-align: center;
+    text-decoration: underline;
 }
 
 /* Side Menu Styles */
@@ -27,6 +27,7 @@ h1 {
     overflow-x: hidden;
     transition: 0.3s;
     padding-top: 60px;
+    z-index: 1001;
 }
 
 /* When active, slide in */
@@ -55,20 +56,22 @@ h1 {
     color: white;
     text-decoration: none;
     display: block;
+    cursor: pointer;
 }
 
 .side-menu ul li a:hover {
     background-color: #555;
 }
 
-/* Dropdown inside side menu */
+/* Dropdown content hidden by default */
 .side-menu .dropdown-content {
     display: none;
     padding-left: 20px;
     background-color: #444;
 }
 
-.side-menu .dropdown:hover .dropdown-content {
+/* Dropdown shown when active */
+.side-menu .dropdown-content.active {
     display: block;
 }
 
@@ -81,11 +84,11 @@ h1 {
     position: fixed;
     top: 15px;
     left: 15px;
-    z-index: 2;
-    color: black; /* Default black */
-    transition: color 0.3s ease; /* Smooth color transition */
+    z-index: 1002;
+    color: black; /* Default color */
+    transition: color 0.3s ease;
 }
-/* When menu is active, button turns white */
+
 .menu-toggle.active {
     color: white;
 }
@@ -100,4 +103,7 @@ h1 {
     background: none;
     border: none;
     cursor: pointer;
+}
+.dropdown-content {
+    transition: all 0.3s ease;
 }
